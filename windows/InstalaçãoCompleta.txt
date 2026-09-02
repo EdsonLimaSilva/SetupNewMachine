@@ -1,0 +1,20 @@
+:: 1. Instala o Google Chrome em segundo plano (Silencioso)
+start /wait "" ChromeSetup.exe /silent /install
+
+:: 2. Instala o Microsoft Teams em segundo plano (Silencioso)
+start /wait "" MSTeamsSetup.exe /provisionsilent
+
+:: 3. Instala o ONLYOFFICE em segundo plano (Silencioso)
+start /wait "" ONLYOFFICEDesktopInstaller.exe /VERYSILENT /SUPPRESSMSGBOXES /NORESTART
+
+:: 4. ABRE A TELA de instalação do GLPI Agent 64-bit para você configurar
+start /wait "" msiexec /i GLPI-Agent-1.7.1-x64.msi
+
+:: 5. Instalar o LibreOffice
+
+winget install --id TheDocumentFoundation.LibreOffice --silent --accept-source-agreements --accept-package-agreements
+
+
+:: 6. ABRE O ANYDESK na tela inicial para você clicar em "Instalar AnyDesk neste computador"
+start "" AnyDesk.exe
+

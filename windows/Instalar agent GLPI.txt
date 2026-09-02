@@ -1,0 +1,13 @@
+Instalar GLPI Agent (Inventario)
+
+Executa aplicação
+
+Avançado
+Remote Target (Endereço servidor GLPI)
+http://172.16.4.65/marketplace/glpiinventory
+
+Next
+Pronto
+
+forçar agent glpi
+http://127.0.0.1:62354
